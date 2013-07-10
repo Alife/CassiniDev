@@ -54,6 +54,7 @@
             this.exceptionRichTextBox = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bodyBodyView = new CassiniDev.ServerLog.BodyView();
+            this.RemoteIP = new System.Windows.Forms.ColumnHeader();
             this.menuStrip1.SuspendLayout();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -151,6 +152,7 @@
             this.CreatedHeader,
             this.StatusHeader,
             this.UrlHeader,
+            this.RemoteIP,
             this.PathTranslatedHeader,
             this.IdentityHeader});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -184,6 +186,11 @@
             // 
             this.UrlHeader.Text = "Url";
             this.UrlHeader.Width = 160;
+            // 
+            // RemoteIP
+            // 
+            this.RemoteIP.Text = "RemoteIP";
+            this.RemoteIP.Width = 120;
             // 
             // PathTranslatedHeader
             // 
@@ -352,5 +359,6 @@
         private System.Windows.Forms.ColumnHeader UrlHeader;
         private System.Windows.Forms.ColumnHeader PathTranslatedHeader;
         private System.Windows.Forms.ColumnHeader IdentityHeader;
+        private System.Windows.Forms.ColumnHeader RemoteIP;
     }
 }

@@ -114,11 +114,12 @@ namespace CassiniDev
             return null;
         }
 
-        public void LogRequest(string pathTranslated, string url)
+        public void LogRequest(string pathTranslated, string url, string remoteIP)
         {
             _requestLog.PathTranslated = pathTranslated;
 
             _requestLog.Url = url;
+            _requestLog.RemoteIP = remoteIP;
         }
 
         public void LogRequestBody(byte[] content)

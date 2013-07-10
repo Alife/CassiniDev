@@ -814,7 +814,8 @@ namespace CassiniDev
 
             _pathTranslated = MapPath(_filePath);
 
-            _connection.LogRequest(_pathTranslated, _url);
+            string remoteIP = GetRemoteAddress();
+            _connection.LogRequest(_pathTranslated, _url, remoteIP);
         }
 
         private void PrepareResponse()

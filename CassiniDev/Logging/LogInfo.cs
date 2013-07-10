@@ -49,6 +49,8 @@ namespace CassiniDev.ServerLog
 
         public string Url { get; set; }
 
+        public string RemoteIP { get; set; }
+
         #region ICloneable Members
 
         object ICloneable.Clone()

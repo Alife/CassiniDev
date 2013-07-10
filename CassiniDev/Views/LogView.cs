@@ -68,6 +68,7 @@ namespace CassiniDev.ServerLog
                         item.Created.ToString(),
                         item.StatusCode.ToString(),
                         item.Url,
+                        item.RemoteIP,
                         item.PathTranslated,
                         item.Identity
                     })
